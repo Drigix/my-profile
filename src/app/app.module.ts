@@ -13,6 +13,7 @@ import { WorkTimeModule } from 'work-time';
 import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule';
 import { FormsModule } from '@angular/forms';
 import { LayoutsModule } from './layouts/layouts.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LayoutsModule } from './layouts/layouts.module';
     ButtonModule,
     WorkTimeModule,
     FormsModule,
-    LayoutsModule
+    LayoutsModule,
+    PagesModule
   ],
   bootstrap: [AppComponent],
 })
