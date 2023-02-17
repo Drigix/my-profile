@@ -1,1 +1,75 @@
-<h2>aboutme</h2>
+<div class="main">
+  <div class="aboutme">
+    <div class="main-data">
+      <div class="avatar">
+        <img src="https://images.unsplash.com/photo-1557701472-b7ea9af8aa9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MzUyNzM5NXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=420&q=60" alt="photo">
+        <div class="content">
+          <div class="display-field">
+            <label for="name">Name: </label>
+            <h2>Michał</h2>
+          </div>
+          <div class="display-field">
+            <label for="name">Lastname: </label>
+            <h2>Ławinski</h2>
+          </div>
+          <div class="display-field">
+            <label for="name">Birthday: </label>
+            <h2>02.07.2001</h2>
+          </div>
+          <div class="display-field">
+            <label for="name">Live: </label>
+            <h2>Gliwice</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secondary-data">
+      <div class="text-area">
+        <label for="descritpion">Description: </label>
+        <p>I am studying in Silesian University Of Technology, in the faculty of Automatic Control, Electronics and Computer Science. I major in Computer Science and I am a third year undergraduate. Currently working as a full stack developer in ENTE Sp.z.o.o company in languages like: TypeScript, JavaScript, Java. I am interesting in this field of IT and I would like to develop in this way. I am open to job offers in Frontend/Backend/Fullstack Developer.</p>
+      </div>
+      <div class="work-and-studying">
+        <div class="work-place">
+          <label for="work-place" style="font-size: 40px; font-weight: 600; text-shadow: 2px 2px var(--primary-text-color);">Work place: </label>
+          <div class="work-place-data">
+            <div class="display-field">
+              <label for="work-place">Company: </label>
+              <a (click)="onUrlClick('https://ente.com.pl/')">
+                <!-- <img src="https://ente.com.pl/static/images/logo.png" alt=""> -->
+                ENTE Sp. z o.o.
+              </a>
+            </div>
+            <div class="display-field">
+              <label for="date">Date of admission:</label>
+              <p>01.07.2022</p>
+            </div>
+            <div class="display-field">
+              <label for="experience">Experience:</label>
+              <p>Junior</p>
+            </div>
+            <div class="display-field">
+              <label for="position">Position:</label>
+              <p>Fullstack Developer</p>
+            </div>
+          </div>
+      </div>
+      <div class="studying-place">
+        <label for="studying" style="font-size: 40px; font-weight: 600; text-shadow: 2px 2px var(--primary-text-color);">Studying: </label>
+        <div class="studying-place-data">
+          <div class="display-field">
+            <label for="university">University:</label>
+            <a (click)="onUrlClick('https://www.polsl.pl/rau/')">
+              <!-- <img src="https://www.polsl.pl/wp-content/uploads/2021/03/logo-ps-white.svg" alt=""> -->
+              Silesian University of Technology
+            </a>
+          </div>
+          <div class="display-field">
+            <label for="faculty">Faculty:</label>
+            <p>Automation, Electronics and Information Technology</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

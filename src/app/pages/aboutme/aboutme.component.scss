@@ -1,0 +1,162 @@
+.main {
+  border: 3px solid var(--primary-text-color);
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutme {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    .main-data {
+      padding: 20px;
+      border-right: 1px solid var(--primary-text-color);
+
+      label {
+        color: white;
+      }
+
+      .avatar {
+        display: grid;
+        grid-template-columns: auto auto;
+        img {
+          display: flex;
+          justify-content: center;
+          border-radius: 50%;
+          height: 220px;
+          width: calc(100% - 1px);
+          max-width: 280px;
+        }
+
+        .display-field {
+          padding: 10px;
+          border-bottom: 1px solid var(--primary-text-color);
+
+          h2 {
+            text-align: center;
+            text-shadow: 3px 2px #0a6fea;
+          }
+        }
+      }
+    }
+
+    .secondary-data {
+      .text-area {
+        text-align: center;
+        margin: 20px 20px;
+
+        label {
+          font-size: 25px;
+          color: white;
+          font-weight: 600;
+        }
+      }
+
+      .work-and-studying {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+
+        a {
+          cursor: pointer;
+          padding: 4px 5px;
+        }
+
+        label {
+          font-size: 15px;
+          color: white;
+        }
+
+        .display-field {
+          display: flex;
+          margin-top: 20px;
+          p {
+            margin: 0;
+            padding: 4px 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .aboutme {
+    display: grid;
+    grid-template-columns: 30% auto;
+
+    .main-data {
+      padding: 30px;
+      border-right: 1px solid var(--primary-text-color);
+
+      label {
+        color: white;
+      }
+
+      .avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          height: 280px;
+          width: 280px;
+        }
+
+        .content {
+          width: 100%;
+        }
+
+        .display-field {
+          padding: 10px;
+          border-bottom: 1px solid var(--primary-text-color);
+
+          h2 {
+            text-align: center;
+            text-shadow: 3px 2px #0a6fea;
+          }
+        }
+      }
+    }
+
+    .secondary-data {
+      .text-area {
+        text-align: center;
+        margin: 30px 20px;
+
+        label {
+          font-size: 25px;
+          color: white;
+          font-weight: 600;
+          text-shadow: 2px 2px var(--primary-text-color);
+        }
+      }
+
+      .work-and-studying {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+
+        a {
+          cursor: pointer;
+          padding: 4px 5px;
+        }
+
+        label {
+          font-size: 20px;
+          color: white;
+        }
+
+        .display-field {
+          display: flex;
+          margin-top: 20px;
+          p {
+            margin: 0;
+            padding: 4px 5px;
+          }
+        }
+      }
+    }
+  }
+}

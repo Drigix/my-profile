@@ -10,4 +10,8 @@ export class AboutmeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
+
+  onUrlClick(url: string): void {
+    window.open(url, "_blank");
+  }
 }
