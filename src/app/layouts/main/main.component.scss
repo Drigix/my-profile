@@ -1,21 +1,6 @@
-.body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 .main {
-  position: relative;
   border: 3px solid var(--primary-text-color);
   border-radius: 25px;
-  width: 60%;
-  margin-top: 30px;
 
   .main-content {
     display: grid;
@@ -27,11 +12,4 @@
       width: calc(100% - 5px);
     }
   }
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--primary-light-color);
 }
