@@ -1,6 +1,14 @@
 <div class="navbar">
-  <a href="">HOME</a>
-  <a href="/aboutme">ABOUT ME</a>
-  <a href="/skills">SKILLS</a>
-  <a href="/hobbies">HOBBIES</a>
+  <div class="small-window" *ngIf="isScreenSmall">
+    <i class="pi pi-th-large" (click)="onIconMenuClick()"></i>
+  </div>
+  <div class="menu-items" *ngIf="showMenu">
+    <div *ngFor="let item of menuItems">
+      <div [ngClass]=" item.isActive ? 'active-item' : 'not-active-item'">
+        <a (click)="onMenuClick(item)">
+          {{item.name}}
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
