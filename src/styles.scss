@@ -1,9 +1,13 @@
 @import '~primeicons/primeicons.css';
+@import '~primeflex/primeflex.css';
+@import '~font-awesome/css/font-awesome.css';
+@import 'content/scss/bootstrap-variables';
 
 :root {
   --primary-color: #050423;
   --primary-text-color: #0fc7fa;
   --primary-light-color: #0f79fa;
+  --primary-focus-color: var(--primary-light-color);
 }
 
 html, body { height: 100%; }
