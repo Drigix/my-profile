@@ -14,6 +14,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 import { FormsModule } from '@angular/forms';
 import { LayoutsModule } from './layouts/layouts.module';
 import { PagesModule } from './pages/pages.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PagesModule } from './pages/pages.module';
     WorkTimeModule,
     FormsModule,
     LayoutsModule,
-    PagesModule
+    PagesModule,
+    BrowserAnimationsModule
   ],
   bootstrap: [AppComponent],
 })
