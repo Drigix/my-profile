@@ -1,16 +1,16 @@
-.main {
-  border: 3px solid var(--primary-text-color);
-  border-radius: 25px;
-}
 
 @media screen and (max-width: 1200px) {
+  .main {
+    border: none;
+  }
+
   .aboutme {
     display: grid;
     grid-template-rows: auto auto;
 
     .main-data {
       padding: 20px;
-      border-right: 1px solid var(--primary-text-color);
+      border-right: none;
 
       label {
         color: white;
@@ -18,7 +18,8 @@
 
       .avatar {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
         img {
           display: flex;
           justify-content: center;
@@ -26,6 +27,16 @@
           height: 220px;
           width: calc(100% - 1px);
           max-width: 280px;
+          margin-bottom: 20px;
+          box-shadow:
+            inset 0 0 50px #fff,      /* inner white */
+            inset 20px 0 80px #f0f,   /* inner left magenta short */
+            inset -20px 0 80px #0ff,  /* inner right cyan short */
+            inset 20px 0 300px #f0f,  /* inner left magenta broad */
+            inset -20px 0 300px #0ff, /* inner right cyan broad */
+            0 0 50px #fff,            /* outer white */
+            -10px 0 80px #f0f,        /* outer left magenta */
+            10px 0 80px #0ff;
         }
 
         .display-field {
@@ -34,7 +45,9 @@
 
           h2 {
             text-align: center;
-            text-shadow: 3px 2px #0a6fea;
+            color: #fff;
+            text-shadow:
+            0 0 7px #9d00ff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9d00ff, 0 0 82px #9d00ff, 0 0 92px #0b08ff, 0 0 102px #0423ff, 0 0 151px #0014ff;
           }
         }
       }
@@ -81,6 +94,12 @@
 }
 
 @media screen and (min-width: 1201px) {
+
+  .main {
+    border: 3px solid var(--primary-text-color);
+    border-radius: 25px;
+  }
+
   .aboutme {
     display: grid;
     grid-template-columns: 30% auto;
@@ -102,6 +121,15 @@
           border-radius: 50%;
           height: 280px;
           width: 280px;
+          box-shadow:
+            inset 0 0 50px #fff,      /* inner white */
+            inset 20px 0 80px #f0f,   /* inner left magenta short */
+            inset -20px 0 80px #0ff,  /* inner right cyan short */
+            inset 20px 0 300px #f0f,  /* inner left magenta broad */
+            inset -20px 0 300px #0ff, /* inner right cyan broad */
+            0 0 50px #fff,            /* outer white */
+            -10px 0 80px #f0f,        /* outer left magenta */
+            10px 0 80px #0ff;
         }
 
         .content {
@@ -114,7 +142,10 @@
 
           h2 {
             text-align: center;
-            text-shadow: 3px 2px #0a6fea;
+            // text-shadow: 3px 2px #0a6fea;
+            color: #fff;
+            text-shadow:
+            0 0 7px #9d00ff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9d00ff, 0 0 82px #9d00ff, 0 0 92px #0b08ff, 0 0 102px #0423ff, 0 0 151px #0014ff;
           }
         }
       }
@@ -159,4 +190,17 @@
       }
     }
   }
+}
+
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
 }
