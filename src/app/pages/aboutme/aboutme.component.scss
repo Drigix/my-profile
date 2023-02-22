@@ -46,8 +46,7 @@
           h2 {
             text-align: center;
             color: #fff;
-            text-shadow:
-            0 0 7px #9d00ff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9d00ff, 0 0 82px #9d00ff, 0 0 92px #0b08ff, 0 0 102px #0423ff, 0 0 151px #0014ff;
+            text-shadow: var(--fiolet-border-box);
           }
         }
       }
@@ -144,8 +143,7 @@
             text-align: center;
             // text-shadow: 3px 2px #0a6fea;
             color: #fff;
-            text-shadow:
-            0 0 7px #9d00ff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9d00ff, 0 0 82px #9d00ff, 0 0 92px #0b08ff, 0 0 102px #0423ff, 0 0 151px #0014ff;
+            text-shadow: var(--fiolet-border-box);
           }
         }
       }

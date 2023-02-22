@@ -8,6 +8,9 @@
   --primary-text-color: #0fc7fa;
   --primary-light-color: #0f79fa;
   --primary-focus-color: var(--primary-light-color);
+  --fiolet-border-box: 0 0 7px #9d00ff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9d00ff, 0 0 82px #9d00ff, 0 0 92px #0b08ff, 0 0 102px #0423ff, 0 0 151px #0014ff;
+  --blue-border-box: 0 0 7px #084eff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #084eff, 0 0 82px #084eff, 0 0 92px #084eff, 0 0 102px #0423ff, 0 0 151px #0014ff;
+  --lightblue-border-box: 0 0 7px #0fc7fa, 0 0 10px #0fc7fa, 0 0 21px #0fc7fa, 0 0 42px #0fc7fa, 0 0 82px #0fc7fa, 0 0 92px #0b08ff, 0 0 102px #0423ff, 0 0 151px #0014ff;
 }
 
 html, body { height: 100%; }
