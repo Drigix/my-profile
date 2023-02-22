@@ -1,5 +1,51 @@
-<div class="skills">
-  <div>
-    <h2>The best</h2>
+<div class="skills grid">
+  <div class="col">
+    <label for="database-technologies">Database</label>
+    <div class="techngology-container" *ngFor="let item of myDatabaseTechnologies">
+      <img [src]="item.img"/>
+      <p-rating [(ngModel)]="item.rate" [cancel]="false" [readonly]="true" iconOffClass="pi pi-circle" iconOnClass="pi pi-circle-fill"></p-rating>
+    </div>
+  </div>
+  <div class="col">
+    <label for="backend-technologies">Backend</label>
+    <div class="techngology-container" *ngFor="let item of myBackendTechnologies">
+      <img [src]="item.img"/>
+      <p-rating [(ngModel)]="item.rate" [cancel]="false" [readonly]="true" iconOffClass="pi pi-circle" iconOnClass="pi pi-circle-fill"></p-rating>
+    </div>
+  </div>
+  <div class="col">
+    <label for="frontend-technologies">Frontend</label>
+    <div class="techngology-container" *ngFor="let item of myFrontendTechnologies">
+      <img [src]="item.img"/>
+      <p-rating [(ngModel)]="item.rate" [cancel]="false" [readonly]="true" iconOffClass="pi pi-circle" iconOnClass="pi pi-circle-fill"></p-rating>
+    </div>
+  </div>
+  <div class="col">
+    <label for="hosting-technologies">Hosting</label>
+    <div class="techngology-container" *ngFor="let item of myHostingTechnologies">
+      <img [src]="item.img"/>
+      <p-rating [(ngModel)]="item.rate" [cancel]="false" [readonly]="true" iconOffClass="pi pi-circle" iconOnClass="pi pi-circle-fill"></p-rating>
+    </div>
+    <label for="program-technologies">IDE</label>
+    <div class="techngology-container" *ngFor="let item of myProgramTechnologies">
+      <img [src]="item.img"/>
+      <p-rating [(ngModel)]="item.rate" [cancel]="false" [readonly]="true" iconOffClass="pi pi-circle" iconOnClass="pi pi-circle-fill"></p-rating>
+    </div>
+    <div class="col">
+      <label for="other-technologies">Other</label>
+      <div class="techngology-container" *ngFor="let item of myOtherTechngologies ">
+        <img [src]="item.img"/>
+        <p-rating [(ngModel)]="item.rate" [cancel]="false" [readonly]="true" iconOffClass="pi pi-circle" iconOnClass="pi pi-circle-fill"></p-rating>
+      </div>
+    </div>
   </div>
 </div>
+<!-- <div class="skills grid">
+  <div class="col">
+    <label for="other-technologies">Other</label>
+    <div class="techngology-container" *ngFor="let item of myOtherTechngologies ">
+      <img [src]="item.img"/>
+      <p-rating [(ngModel)]="item.rate" [cancel]="false" [readonly]="true" iconOffClass="pi pi-circle" iconOnClass="pi pi-circle-fill"></p-rating>
+    </div>
+  </div>
+</div> -->

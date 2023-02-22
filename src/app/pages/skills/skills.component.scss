@@ -1,0 +1,25 @@
+.skills {
+  label {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: var(--lightblue-border-box);
+  }
+}
+
+.techngology-container {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+
+  img {
+    padding-right: 20px;
+    height: 100px;
+  }
+}
+
+:host ::ng-deep .p-rating-icon {
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
