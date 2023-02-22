@@ -5,13 +5,17 @@ import { NgModule } from '@angular/core';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { PanelModule } from 'primeng/panel';
 import { FieldsetModule } from 'primeng/fieldset';
+import { RatingModule } from 'primeng/rating';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     BrowserModule,
     ButtonModule,
     PanelModule,
-    FieldsetModule
+    FieldsetModule,
+    RatingModule,
+    FormsModule
   ],
   exports: [
     AboutmeComponent,
