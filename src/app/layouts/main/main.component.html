@@ -1,11 +1,59 @@
 <div class="main">
   <div class="main-content">
-    <div class="text">
-      <h2>Hello!</h2>
-      <p>I would you welcome you in my website. This is project conceived and made only by my. I did it for myself and for prove my experience in web developer skills.</p>
+    <div class="main-upper grid py-2">
+      <div class="col main-upper-left">
+        <h2>Hello! Welcome!<br> <p style="font-size: 70px;">I'm Michał Ławinski</p> <p style="font-size: 20px;">I would you welcome you in my website</p></h2>
+        <!-- <p>I would you welcome you in my website. This is project conceived and made only by my. I did it for myself and for prove my experience in web developer skills.</p> -->
+      </div>
+      <div class="col main-upper-mid">
+        <img src="../../../assets/photos/328290586_734234658303242_5711559892490599112_n-removebg-preview-removebg-preview.png" alt="photo">
+      </div>
+      <div class="col main-upper-right pl-5">
+        <div class="text">
+          <p>If you want you can see some of my projects, get inspired or just learn to build your own app!</p>
+          <div class="details">
+            <p>show more</p>
+            <i class="pi pi-arrow-right pl-3 text-2xl"></i>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="image">
-      <img src="https://images.unsplash.com/photo-1557701472-b7ea9af8aa9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MzUyNzM5NXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=420&q=60" alt="photo">
+
+    <div class="frame grid">
+      <div class="col frame-element" *ngFor="let item of frameElements">
+        <img [src]="item.img" [style]="item.style">
+      </div>
+    </div>
+
+    <div class="main-mid grid py-8">
+      <div class="main-mid-left col grid">
+        <div class="col">
+          <h2>5+</h2>
+          <label for="projects">projects compleated</label>
+          <h2>1+</h2>
+          <label for="experience">year of experience</label>
+        </div>
+        <div class="col">
+          <h2>3</h2>
+          <label for="studying">year of studying</label>
+          <h2>5+</h2>
+          <label for="languages">programming languages</label>
+        </div>
+      </div>
+      <div class="main-mid-right col">
+        <div class="frontend">
+          <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/687289/retina_1708x683_op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-d3a7d3e7430ee224cab75104f11342a0.png">
+          <label for="frontend">Frontend develop</label>
+          <i class="pi pi-arrow-right pl-5 text-6xl"></i>
+        </div>
+        <hr class="my-5">
+        <div class="backend">
+          <img src="https://www.crenw.net/blog-image/backend-nedir-ve-backend-developer-ne-is-yapar.png">
+          <label for="frontend">Backend develop</label>
+          <i class="pi pi-arrow-right pl-5 text-6xl"></i>
+        </div>
+        <hr class="my-5">
+      </div>
     </div>
   </div>
 </div>
