@@ -15,6 +15,8 @@
         h2 {
           font-size: 100px;
           position: absolute;
+          color: white;
+          text-shadow: var(--lightblue-border-box);
         }
       }
 
@@ -101,3 +103,8 @@
     }
   }
 }
+
+// @font-face {
+//   font-family: patuaone;
+//   src: url("src/assets/font/PatuaOne-Regular.ttf") format("opentype");
+// }
