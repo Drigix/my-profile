@@ -1,11 +1,12 @@
 <div class="navbar">
   <div class="small-window" *ngIf="isScreenSmall">
-    <i class="pi pi-th-large" (click)="onIconMenuClick()"></i>
+    <i class="pi pi-th-large" style="font-size: 25px;" (click)="onIconMenuClick()"></i>
   </div>
   <div class="menu-items" *ngIf="showMenu">
     <div *ngFor="let item of menuItems">
       <div [ngClass]=" item.isActive ? 'active-item' : 'not-active-item'">
         <a (click)="onMenuClick(item)">
+          <i [class]="item.icon" style="font-size: 20px"></i>
           {{item.name}}
         </a>
       </div>

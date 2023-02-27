@@ -28,25 +28,30 @@ export class NavbarComponent implements OnInit {
         id: 1,
         name: 'HOME',
         url: '',
-        isActive: true
+        isActive: true,
+        icon: 'pi pi-home'
       },
       {
         id: 2,
         name: 'ABOUT ME',
         url: '/aboutme',
-        isActive: false
+        isActive: false,
+        icon: 'pi pi-user'
       },
       {
         id: 3,
         name: 'SKILLS',
         url: '/skills',
-        isActive: false
+        isActive: false,
+        icon: 'pi pi-star'
       },
       {
         id: 4,
         name: 'HOBBIES',
         url: '/hobbies',
-        isActive: false
+        isActive: false,
+        icon: 'pi pi-thumbs-up'
+
       },
     ];
     window.innerWidth < 1001 ? this.isScreenSmall = true : this.isScreenSmall = false;
